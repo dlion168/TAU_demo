@@ -1,15 +1,117 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audio Quiz Demo</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAU: Taiwan Audio Understanding Benchmark</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Audio Quiz Demo</h1>
-  <div class="container" id="quiz-container"></div>
-  <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TAU Benchmark</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="examples.html" class="nav-link">Examples</a></li>
+                <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Paper Information Section -->
+            <section class="paper-info">
+                <h1>TAU: Taiwan Audio Understanding Benchmark</h1>
+                <div class="authors">
+                    <p><strong>Authors:</strong> [PLACEHOLDER: Author Names]</p>
+                    <p><strong>Affiliations:</strong> [PLACEHOLDER: University/Institution Names]</p>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/dlion168/TAU_demo" target="_blank" class="btn-secondary">
+                        📚 View on GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- Introduction Section -->
+            <section class="introduction">
+                <h2>What is TAU?</h2>
+                <p>Large audio–language models are advancing rapidly, yet most evaluations emphasize speech or globally
+                    sourced sounds, overlooking culturally distinctive cues. This gap raises a critical question: can
+                    current models generalize to localized, non-semantic audio that communities instantly recognize but
+                    outsiders do not? To address this, we present TAU (Taiwan Audio Understanding), a benchmark of
+                    everyday Taiwanese “soundmarks.”
+
+                    TAU curates everyday, locally distinctive Taiwanese non-speech sounds and evaluates models with
+                    multiple-choice questions (MCQs) that cannot be answered by semantic reasoning alone, steering
+                    evaluation toward timbre, rhythm, and iconic acoustic patterns. Beyond Taiwan, TAU illustrates how
+                    localized benchmarks can highlight cultural blind spots in audio–language models, include
+                    underrepresented communities in multimodal evaluation, and guide the design of more equitable and
+                    robust multimodal systems.
+                </p>
+
+                <h2>Dataset Snapshot</h2>
+                <p>TAU contains 702 audio clips across 10 culturally distinctive categories.
+                    This diversity ensures that the dataset covers both highly frequent urban soundmarks (e.g., transit
+                    chimes, store jingles) and less common but socially important cues (e.g., emergency alarms,
+                    religious chants).
+                    The category distribution is intentionally imbalanced to reflect the natural frequency of sounds in
+                    everyday Taiwanese soundscapes, rather than enforcing artificial uniformity.
+
+                    Each clip is paired with up to four MCQs, resulting in 1794 evaluation items in total.
+                    The median clip length is 9.43 seconds, with a maximum of 30 seconds by design. This design balances
+                    realism with usability, allowing evaluation without excessive cognitive load.
+                    On average, each soundmark has 2.1 recording variants that differ by location, time, or background
+                    conditions, which increases robustness and reduces overfitting to specific contexts.</p>
+            </section>
+
+            <!-- Call-to-Action Section -->
+            <section class="cta-section">
+                <div class="cta-buttons">
+                    <a href="leaderboard.html" class="btn-primary">View Leaderboard</a>
+                    <a href="#" class="btn-secondary">Download Data & Instructions</a>
+                </div>
+                <p class="cta-note">Note: The homepage features selected examples only. Full dataset available via
+                    download link.</p>
+            </section>
+
+            <!-- Citation Section -->
+            <section class="citation">
+                <h2>Cite Our Paper</h2>
+                <div class="citation-block">
+                    <h3>MLA Format:</h3>
+                    <div class="citation-text">
+                        [PLACEHOLDER: Authors]. "TAU: Taiwan Audio Understanding Benchmark." <em>[PLACEHOLDER:
+                            Conference/Journal Name]</em>,
+                        [PLACEHOLDER: Year]. [PLACEHOLDER: Page Numbers].
+                    </div>
+                </div>
+                <div class="citation-block">
+                    <h3>BibTeX:</h3>
+                    <div class="citation-code">
+                        <pre><code>@misc{tau2024,
+  title={TAU: Taiwan Audio Understanding Benchmark},
+  author={[PLACEHOLDER: Author Names]},
+  year={[PLACEHOLDER: Year]},
+  eprint={[PLACEHOLDER: arXiv:XXXX.XXXX]},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TAU Benchmark. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

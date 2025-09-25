@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - TAU: Taiwan Audio Understanding Benchmark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TAU Benchmark</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="examples.html" class="nav-link">Examples</a></li>
+                <li><a href="leaderboard.html" class="nav-link active">Leaderboard</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>TAU Benchmark Leaderboard</h1>
+                <p>Compare model performance on Taiwan Audio Understanding tasks</p>
+            </header>
+
+            <!-- Leaderboard Description -->
+            <section class="leaderboard-description">
+                <p>The human baseline (🏆) represents the upper bound for model performance, with approximately 84%
+                    accuracy on single-hop and 83% on multi-hop questions.</p>
+            </section>
+
+            <!-- Search and Submission Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="model-search" placeholder="Search by model name..." class="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leaderboard Table -->
+            <section class="leaderboard-table-section">
+                <div class="table-container">
+                    <table class="leaderboard-table" id="leaderboard">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-column="rank">Rank</th>
+                                <th class="sortable" data-column="model">Model</th>
+                                <th class="sortable" data-column="params">Params (B)</th>
+                                <th class="sortable" data-column="single-hop">Single-hop Acc</th>
+                                <th class="sortable" data-column="multi-hop">Multi-hop Acc</th>
+                                <th class="sortable" data-column="submission-date">Submission Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <!-- Human Baseline (Fixed at top) -->
+                            <tr class="human-baseline-row">
+                                <td>🏆</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">Human Baseline</span>
+                                        <span class="model-org">Upper Bound</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">~84%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 84%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">~83%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 83%"></div>
+                                    </div>
+                                </td>
+                                <td>[PLACEHOLDER]</td>
+                            </tr>
+                            <!-- Model submissions start here -->
+                            <tr>
+                                <td>1</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">GPT-4 Audio</span>
+                                        <span class="model-org">OpenAI</span>
+                                    </div>
+                                </td>
+                                <td>1750</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">72.5%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 72.5%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">68.3%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 68.3%"></div>
+                                    </div>
+                                </td>
+                                <td>2024-09-20</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">Gemini Pro Audio</span>
+                                        <span class="model-org">Google</span>
+                                    </div>
+                                </td>
+                                <td>540</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">69.1%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 69.1%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">65.7%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 65.7%"></div>
+                                    </div>
+                                </td>
+                                <td>2024-09-18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">Claude 3 Sonnet Audio</span>
+                                        <span class="model-org">Anthropic</span>
+                                    </div>
+                                </td>
+                                <td>200</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">64.2%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 64.2%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">61.8%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 61.8%"></div>
+                                    </div>
+                                </td>
+                                <td>2024-09-15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">Whisper Large v3</span>
+                                        <span class="model-org">OpenAI</span>
+                                    </div>
+                                </td>
+                                <td>1.55</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">45.3%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 45.3%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">42.1%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 42.1%"></div>
+                                    </div>
+                                </td>
+                                <td>2024-09-10</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="model-cell">
+                                    <div class="model-info">
+                                        <span class="model-name">Random Baseline</span>
+                                        <span class="model-org">Baseline</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">25.0%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 25%"></div>
+                                    </div>
+                                </td>
+                                <td class="accuracy-cell">
+                                    <span class="accuracy-value">25.0%</span>
+                                    <div class="accuracy-bar">
+                                        <div class="accuracy-fill" style="width: 25%"></div>
+                                    </div>
+                                </td>
+                                <td>2024-09-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <div class="contact-card">
+                    <h2>Submit Your Results</h2>
+                    <p>Ready to evaluate your model on TAU? Contact the authors to discuss your submission and add your
+                        model to the leaderboard.</p>
+                    <div class="contact-info">
+                        <p><strong>Primary Contact:</strong> [student-email@university.edu]</p>
+                        <p><strong>Supervisor:</strong> [professor-email@university.edu]</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TAU Benchmark. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="leaderboard.js"></script>
+</body>
+
+</html>
