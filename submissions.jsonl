@@ -1,5 +1,10 @@
-{"model_name":"GPT-4 Audio", "model_org":"OpenAI", "params":null, "single_accuracy":0.75, "multi_accuracy": 0.683, "submission_date":"2025-03-01"}
-{"model_name":"GPT-5 Audio", "model_org":"OpenAI", "params":1550, "single_accuracy":0.73, "multi_accuracy": 0.707, "submission_date":"2025-04-01"}
-{"model_name":"Whisper XL", "model_org":"OpenAI", "params":1550, "single_accuracy":0.70, "multi_accuracy": 0.65, "submission_date":"2025-05-01"}
-{"model_name":"AudioLDM 2", "model_org":"Microsoft", "params":1200, "single_accuracy":0.68, "multi_accuracy": 0.60, "submission_date":"2025-06-01"}
-{"model_name":"Wav2Vec 3", "model_org":"Meta", "params":1300, "single_accuracy":0.66, "multi_accuracy": 0.58, "submission_date":"2025-06-15"}
+{"model_name":"Gemini 2.5 Pro","model_org":"Google","params":null,"single_accuracy":0.724,"multi_accuracy":0.739,"submission_date":"2025-09-01"}
+{"model_name":"Gemini 2.5 Flash","model_org":"Google","params":null,"single_accuracy":0.613,"multi_accuracy":0.632,"submission_date":"2025-09-01"}
+{"model_name":"Qwen2-Audio-Instruct","model_org":"Alibaba","params":"8.2","single_accuracy":0.303,"multi_accuracy":0.278,"submission_date":"2025-09-01"}
+{"model_name":"Qwen2.5-Omni-7B","model_org":"Alibaba","params":"7.6","single_accuracy":0.464,"multi_accuracy":0.461,"submission_date":"2025-09-01"}
+{"model_name":"DeSTA2.5-Audio","model_org":"National Taiwan University, NVIDIA","params":"8.8","single_accuracy":0.433,"multi_accuracy":0.417,"submission_date":"2025-09-01"}
+{"model_name":"Gemma-3n-E2B-it","model_org":"Google","params":"4.4","single_accuracy":0.296,"multi_accuracy":0.258,"submission_date":"2025-09-01"}
+{"model_name":"Gemma-3n-E4B-it","model_org":"Google","params":"6.8","single_accuracy":0.29,"multi_accuracy":0.259,"submission_date":"2025-09-01"}
+{"model_name":"Whisper-large-v3 ASR + LLaMA-3.1","model_org":"OpenAI/Meta","params":"9.6","single_accuracy":0.349,"multi_accuracy":0.341,"submission_date":"2025-09-01"}
+{"model_name":"Qwen2.5-7B-Instruct","model_org":"Alibaba","params":"7","single_accuracy":0.385,"multi_accuracy":0.355,"submission_date":"2025-09-01"}
+{"model_name":"LLaMA-3.1","model_org":"Meta","params":"8","single_accuracy":0.376,"multi_accuracy":0.414,"submission_date":"2025-09-01"}
