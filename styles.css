@@ -228,6 +228,9 @@ p {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .example-card:hover {
@@ -292,6 +295,9 @@ p {
 
 .card-body {
     padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .audio-player {
@@ -330,7 +336,7 @@ p {
 }
 
 .answer-section {
-    margin-top: 1rem;
+    margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid var(--border-color);
 }

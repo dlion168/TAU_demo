@@ -1,0 +1,5 @@
+{"model_name":"GPT-4 Audio", "model_org":"OpenAI", "params":null, "single_accuracy":0.75, "multi_accuracy": 0.683, "submission_date":"2025-03-01"}
+{"model_name":"GPT-5 Audio", "model_org":"OpenAI", "params":1550, "single_accuracy":0.73, "multi_accuracy": 0.707, "submission_date":"2025-04-01"}
+{"model_name":"Whisper XL", "model_org":"OpenAI", "params":1550, "single_accuracy":0.70, "multi_accuracy": 0.65, "submission_date":"2025-05-01"}
+{"model_name":"AudioLDM 2", "model_org":"Microsoft", "params":1200, "single_accuracy":0.68, "multi_accuracy": 0.60, "submission_date":"2025-06-01"}
+{"model_name":"Wav2Vec 3", "model_org":"Meta", "params":1300, "single_accuracy":0.66, "multi_accuracy": 0.58, "submission_date":"2025-06-15"}
