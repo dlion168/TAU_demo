@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             params: null,
             single_accuracy: 0.25,
             multi_accuracy: 0.25,
-            submission_date: "2024-09-01"
+            submission_date: "2025-09-01"
         });
     } catch (error) {
         console.error('Error loading submissions:', error);
