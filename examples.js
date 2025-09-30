@@ -69,7 +69,7 @@ function createExampleCard(question, index) {
     </div>
     
     <div class="card-footer">
-      <a href="#" class="card-link">Full Dataset and Download →</a>
+      <a href="https://huggingface.co/datasets/chenjoachim/TAU-Benchmark" class="card-link">Full Dataset and Download →</a>
     </div>
   `;
 
