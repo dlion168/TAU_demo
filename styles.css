@@ -283,7 +283,7 @@ p {
     color: #991b1b;
 }
 
-.badge-daily {
+.badge-nature {
     background: #ede9fe;
     color: #5b21b6;
 }
@@ -293,29 +293,24 @@ p {
     color: #b91c1c;
 }
 
-.badge-public {
+.badge-entertainment {
     background: #e0f2fe;
     color: #0369a1;
 }
 
-.badge-broadcast {
+.badge-announcement {
     background: #f3f4f6;
     color: #374151;
 }
 
-.badge-music {
+.badge-payment {
     background: #edeff6;
     color: #1e3a8a;
 }
 
-.badge-banking {
+.badge-education {
     background: #f0fdf4;
     color: #065f46;
-}
-
-.badge-celebrity {
-    background: #fff7ed;
-    color: #c2410c;
 }
 
 .badge-single-hop {
