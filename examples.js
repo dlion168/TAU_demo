@@ -46,11 +46,6 @@ function createExampleCard(question, index) {
         Your browser does not support the audio element.
       </audio>
       
-      <div class="cultural-context">
-        <h4>Cultural Context:</h4>
-        <p>${getCulturalContext(question)}</p>
-      </div>
-      
       <div class="question-preview">
         <h4>Sample Question:</h4>
         <p><strong>Q:</strong> ${question.questionEn}</p>
@@ -66,10 +61,6 @@ function createExampleCard(question, index) {
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="card-footer">
-      <a href="https://huggingface.co/datasets/chenjoachim/TAU-Benchmark" class="card-link">Full Dataset and Download →</a>
     </div>
   `;
 
